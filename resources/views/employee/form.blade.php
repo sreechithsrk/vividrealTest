@@ -14,7 +14,7 @@
     </div>
 
     <div>
-        <x-input-label for="last_name" :value="__('First Name')"/>
+        <x-input-label for="last_name" :value="__('Last Name')"/>
         <x-text-input id="last_name" name="last_name" type="text" class="mt-1 block w-full"
                       :value="old('last_name', $model->last_name ?? '')"
                       required autofocus autocomplete="last_name"/>

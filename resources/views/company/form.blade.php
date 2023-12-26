@@ -29,11 +29,12 @@
 
     <div>
         @if($model)
-            <img src="{{ $model->logoUrl }}">
+            <img src="{{ $model->logoUrl }}" alt="">
         @endif
-        <x-input-label for="website" :value="__('Website')"/>
+
+        <x-input-label for="logo" :value="__('Logo')"/>
         <x-file-input id="logo" name="logo" type="text" class="mt-1 block w-full"
-                      :value="old('logo', $model->logo ?? '')" autocomplete="website"/>
+                      :value="old('logo', $model->logo ?? '')" autocomplete="logo"/>
         <x-input-error class="mt-2" :messages="$errors->get('logo')"/>
     </div>
 
