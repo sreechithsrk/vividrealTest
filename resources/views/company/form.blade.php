@@ -29,7 +29,7 @@
 
     <div>
         @if($model)
-            <img src="{{ $model->logoUrl }}" alt="">
+            <img src="{{ $model->logoUrl }}" alt="" width="100px" height="100px">
         @endif
 
         <x-input-label for="logo" :value="__('Logo')"/>
